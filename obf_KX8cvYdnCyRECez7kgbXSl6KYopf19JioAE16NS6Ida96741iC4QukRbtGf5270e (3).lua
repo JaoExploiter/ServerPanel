@@ -1,45 +1,30 @@
---[=[
+--[[
  d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
 88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
 88      88    88    88            odD'      88      88    88 88ooo88 
 88  ooo 88    88    88          .88'        88      88    88 88~~~88 
 88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
+]]
 
--- Instances: 338 | Scripts: 89 | Modules: 0 | Tags: 0
 local G2L = {};
-
--- StarterGui.ADMINPANEL
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["ResetOnSpawn"] = false;
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-
-
--- StarterGui.ADMINPANEL.Name
 G2L["2"] = Instance.new("LocalScript", G2L["1"]);
 G2L["2"]["Name"] = [[Name]];
-
-
--- StarterGui.ADMINPANEL.Frame
 G2L["3"] = Instance.new("Frame", G2L["1"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(63, 63, 63);
 G2L["3"]["Size"] = UDim2.new(0, 574, 0, 317);
 G2L["3"]["Position"] = UDim2.new(0.27273, 0, 0.22586, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
-
--- StarterGui.ADMINPANEL.Frame.Frame
 G2L["4"] = Instance.new("Frame", G2L["3"]);
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
 G2L["4"]["Size"] = UDim2.new(0, 573, 0, 33);
 G2L["4"]["Position"] = UDim2.new(-0, 0, 0, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
-
--- StarterGui.ADMINPANEL.Frame.Frame.TextLabel
 G2L["5"] = Instance.new("TextLabel", G2L["4"]);
 G2L["5"]["BorderSizePixel"] = 0;
 G2L["5"]["TextSize"] = 23;
@@ -52,19 +37,10 @@ G2L["5"]["Size"] = UDim2.new(0, 193, 0, 33);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5"]["Text"] = [[Server Panel]];
 G2L["5"]["Position"] = UDim2.new(0.01182, 0, 0, 0);
-
-
--- StarterGui.ADMINPANEL.Frame.Frame.UICorner
 G2L["6"] = Instance.new("UICorner", G2L["4"]);
 G2L["6"]["CornerRadius"] = UDim.new(0, 3);
-
-
--- StarterGui.ADMINPANEL.Frame.UICorner
 G2L["7"] = Instance.new("UICorner", G2L["3"]);
 G2L["7"]["CornerRadius"] = UDim.new(0, 3);
-
-
--- StarterGui.ADMINPANEL.Frame.ScrollingFrame
 G2L["8"] = Instance.new("ScrollingFrame", G2L["3"]);
 G2L["8"]["Visible"] = false;
 G2L["8"]["Active"] = true;
