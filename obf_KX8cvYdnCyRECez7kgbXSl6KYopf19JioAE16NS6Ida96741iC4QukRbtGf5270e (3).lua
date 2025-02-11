@@ -1,4 +1,7 @@
-                                                                                 local v0={};v0["1"]=  
+
+-- [[ Made by ._.kinzin ]] --
+
+                                                                                  local v0={};v0["1"]=  
                                                                         Instance.new("ScreenGui",game:GetService(       
                                                                     "Players").LocalPlayer:WaitForChild("PlayerGui"));v0["1"][    
                                                                 'ResetOnSpawn']=false;v0["1"]['ZIndexBehavior']=Enum.ZIndexBehavior.    
